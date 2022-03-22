@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>host</title>
+    <style>
+      my-element {
+        --primary-color: blue;
+        --heading-primary: 60px;
+      }
+      .segundo {
+        --primary-color: tomato;
+      }
+      .tercero {
+        --primary-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <template> </template> -->
+    <my-element>
+      <span slot="title">slot title 1</span>
+      <span slot="parrafo">slot parrafo</span>
+    </my-element>
+    <my-element class="segundo">
+      <span slot="title">slot title 2</span>
+      <span slot="parrafo">slot parrafo</span>
+    </my-element>
+    <my-element class="tercero">
+      <span slot="title">slot title 3</span>
+      <span slot="parrafo">slot parrafo</span>
+    </my-element>
+
+    <script type="module" src="./my-element.js"></script>
+  </body>
+</html>

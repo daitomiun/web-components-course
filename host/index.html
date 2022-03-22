@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>host</title>
+  </head>
+  <body>
+    <!-- <template> </template> -->
+    <my-element>
+      <span slot="title">slot title 1</span>
+      <span slot="parrafo">slot parrafo</span>
+    </my-element>
+    <my-element class="blue">
+      <span slot="title">slot title 2</span>
+      <span slot="parrafo">slot parrafo</span>
+    </my-element>
+    <my-element yellow>
+      <span slot="title">slot title 3</span>
+      <span slot="parrafo">slot parrafo</span>
+    </my-element>
+    <article class="card">
+      <my-element yellow>
+        <span slot="title">slot title card</span>
+        <span slot="parrafo">slot parrafo</span>
+      </my-element>
+    </article>
+    <script type="module" src="./my-element.js"></script>
+  </body>
+</html>
